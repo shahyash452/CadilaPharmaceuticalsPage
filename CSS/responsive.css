@@ -1,0 +1,358 @@
+@media only screen and (max-width:1300px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .topHeader ul li {
+        margin-right: 10px;
+    }
+
+    .right-ul li {
+        padding-left: 15px;
+    }
+
+    .right-ul {
+        margin-right: 10px;
+    }
+
+    .inside-content {
+        height: 150px;
+        width: 550px;
+        position: absolute;
+        right: 100px;
+        top: 100px;
+    }
+
+    .desc {
+        width: 355px;
+    }
+
+    .heading img {
+        position: relative;
+        left: 70px;
+    }
+
+    .text {
+        margin-left: 45px;
+    }
+
+    .youtube-video iframe {
+        width: 570px;
+    }
+
+    .formula-para {
+        width: 90%;
+    }
+
+    .l-line {
+        margin-left: 45px;
+    }
+
+    .blog-products {
+        margin-left: 45px;
+    }
+
+    .country {
+        margin-right: 45px;
+    }
+
+    .adv {
+        margin-right: 45px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container1 {
+        max-width: 970px;
+    }
+
+    .rightNav {
+        float: right;
+    }
+
+
+    .right-ul {
+        display: none;
+        height: 100px;
+        z-index: 999;
+    }
+
+    .search-icon {
+        clear: right;
+        float: right;
+        display: block;
+        margin-top: 3px;
+    }
+
+    .search-icon li {
+        padding: 10px;
+    }
+
+    .inside-content {
+        height: 115px;
+        width: 465px;
+        position: absolute;
+        right: 30px;
+        top: 100px;
+    }
+
+    .inside-content p {
+        font-size: 25px;
+    }
+
+    .box {
+        bottom: -230px;
+    }
+
+    .desc {
+        width: 280px;
+    }
+
+    .heading h4 {
+        font-size: 20px;
+    }
+
+    .heading img {
+        position: relative;
+        left: 40px;
+        height: 56px;
+    }
+
+    .para {
+        min-height: 177px;
+    }
+
+    .desc a {
+        position: relative;
+        left: 10px;
+        bottom: 5px;
+    }
+
+    .vid {
+        margin-top: 240px;
+    }
+
+    .vid-para {
+        width: 420px;
+    }
+
+    .you-tube-video {
+        height: 237px;
+        right: 0px;
+
+    }
+
+    .you-tube-video iframe {
+        width: 410px;
+        height: 235px;
+    }
+
+    .formula img {
+        height: 300px;
+        width: 415px;
+    }
+
+    .dots {
+        margin-left: 265px;
+    }
+
+    .blog {
+        width: 60%;
+    }
+
+    .blog-para,
+    .products-para,
+    .country p {
+        font-size: 15px;
+    }
+
+    .products {
+        margin-left: 0px;
+    }
+
+    .vline {
+        margin-left: 20px;
+    }
+
+    .country {
+        width: 30%;
+    }
+
+    .l-line {
+        margin-top: 70px;
+    }
+
+    .adv {
+        margin-top: 47px;
+    }
+}
+
+@media only screen and (max-width:973px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .prev {
+        left: 0px;
+    }
+
+    .next {
+        right: 0px;
+    }
+
+    .inside-content {
+        height: 100px;
+        width: 380px;
+        top: 68px;
+    }
+
+    .inside-content p {
+        font-size: 20px;
+    }
+
+    .box {
+        /* z-index: 10; */
+        position: absolute;
+        bottom: -580px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .vid {
+        margin-top: 600px;
+    }
+
+    .you-tube-video {
+        position: absolute;
+        right: 40px;
+        bottom: -270px;
+        left: 18%;
+    }
+
+    .you-tube-video iframe {
+        width: 450px;
+        height: 253px;
+        border: 8px solid #21146f;
+    }
+
+    .formulations {
+        margin-top: 335px;
+    }
+
+    .formula img {
+        height: 227px;
+        width: 300px;
+    }
+
+    .f-text h3 {
+        font-size: 20px;
+    }
+
+    .form-slider {
+        font-size: 14px;
+    }
+
+    .f-text a {
+        bottom: 25px;
+        font-size: 14px;
+    }
+
+    .dot1 {
+        height: 8px;
+        width: 8px;
+    }
+
+    .dots {
+        margin-top: 56px;
+    }
+
+    .footer-all {
+        height: 600px;
+    }
+
+    .products {
+        margin-left: 72px;
+    }
+
+    .vline {
+        border: none;
+    }
+
+    .country {
+        position: relative;
+        right: 10%;
+        width: 60%;
+        top: 24px;
+    }
+
+    .country a {
+        top: 0px;
+    }
+
+    .adv {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .inside-content {
+        height: 80px;
+        width: 315px;
+    }
+
+    .inside-content p {
+        font-size: 16px;
+    }
+
+    .desc {
+        width: 250px;
+    }
+
+    .heading img {
+        left: 27px;
+        height: 50px;
+    }
+
+    .vid {
+        height: 370px;
+    }
+
+    .text {
+        margin-top: 25px;
+    }
+
+    .you-tube-video {
+        left: 11%;
+    }
+
+    .formula img {
+        height: 217px;
+        width: 250px;
+    }
+
+    .form-slider {
+        font-size: 13px;
+    }
+
+    .dots {
+        margin-top: 50px;
+    }
+    .footer-all {
+        height: 575px;
+      }
+    .blog-para, .products-para, .country p {
+        font-size: 13px;
+      }
+    .l-line p {
+        font-size: 13px;
+    }
+}

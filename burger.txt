@@ -1,0 +1,74 @@
+/* .topHeader {
+
+    background-color: #ff7700;
+    height: 35px;
+    width: 100%;
+    align-items: center;
+} */
+/* .container {
+    margin-left: 120px;
+    margin-right: 120px;
+} */
+
+/* Navbar */
+.rightNav {
+    float: right;
+}
+
+.right-ul {
+    flex-direction: column;
+}
+
+.right-ul {
+    display: none;
+    height: 100px;
+    z-index: 999;
+}
+
+/* Hamburger */
+
+.burger {
+    display: block;
+}
+
+.search-icon {
+    display: block;
+}
+
+/* Image Text */
+.inside-content {
+    position: absolute;
+    right: 100px;
+    top: 150px;
+}
+
+.inside-content p {
+    padding: 6px 14px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/* Main Image */
+.mySlides img {
+    width: 1500px;
+}
+
+/* Box Content  */
+.heading img {
+    position: relative;
+    left: 50px;
+    top: 15px;
+    height: 75px;
+}
+
+/* Formulations */
+.dots {
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+
+/* Footer */
+.vline {
+    margin-left: 15px;
+}
