@@ -288,7 +288,7 @@ ul li {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 
@@ -384,24 +384,25 @@ ul li {
 }
 
 .about-sub ul li a {
-    border-bottom: 2px solid rgb(215, 215, 215);
+    border-bottom: 2px solid rgb(241, 241, 241);
     font-size: 1rem;
     list-style: none;
-    color: rgb(109, 109, 109);
+    color: rgb(0, 0, 0);
 }
 
 .about-sub ul li {
-    text-align: center;
+    padding: 10px;
+    list-style: none;
 }
 
 .about-sub ul li a:hover {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .right-ul li:hover .about-sub {
     display: block;
     position: absolute;
-    background-color: white;
+    background-color: #ff6f00;
 }
 
 .ele {
@@ -617,7 +618,13 @@ ul li {
     transition: 0.6s;
     background-color: #ff6f00;
 }
-
+.prev-box,.next-box{
+    position: absolute;
+    bottom: 0px;
+}
+.next-box{
+    padding-left: 28px;
+}
 /* Middle Element */
 
 .vid {
@@ -761,7 +768,7 @@ footer {
 .footer-all {
     background-image: url("/Images/Footer.jpg");
     background-size: cover;
-    height: 350px;
+    height: 315px;
     background-repeat: no-repeat;
     /* background-color: #000000; */
 }
@@ -877,7 +884,7 @@ footer a:hover {
 
 .adv {
     float: right;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .adv p {
