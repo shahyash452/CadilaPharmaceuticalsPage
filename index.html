@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="/CSS/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="js/jquery-min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -37,7 +38,39 @@
             <div class="leftNav">
                 <img src="\Images\logo.jpg" alt="">
             </div>
-            <div class="rightNav">
+            <div id="mainNav" class="mainNavigation">
+                <div class="menuPart cf">
+                    <ul id="nav">
+                        <li><a href="#">About Us</a>
+                            <ul>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Research</a></li>
+                                <li><a href="#">Alliances</a></li>
+                                <li><a href="#">Champion Brands</a></li>
+                                <li><a href="#">Life @Cadila</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Alliances</a></li>
+                        <li><a href="#">Champion Brands</a></li>
+                        <li><a href="#">Life @Cadila</a></li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="flag"> <a href=""> <img src="\Images\russia.png" alt="" height="20px"
+                                    width="20px"></a>
+                        </li>
+                        <li class="earth" style="display: inline;"> <a href=""> <img src="/Images/Earth.png" alt=""
+                            height="70px" width="70px"></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="rightNav">
                 <ul class="right-ul">
                     <li class="rightNav-li"> <a href="">ABOUT US <i class="fa-solid fa-caret-down"></i></a>
                         <div class="about-sub">
@@ -74,11 +107,12 @@
                         <i class="fa-solid fa-bars burger"></i>
                     </li>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
-    
+
+
     <!-- Main Content -->
     <div class="main-content cf">
         <div class="slideshow-container1">
@@ -163,8 +197,8 @@
                         </div>
                         <a href="">Read More</a>
                     </div>
-                    <a class="prev-box" onclick="plusSlide(-1)"><i class="fa-solid fa-angle-left"></i></a>
-                    <a class="next-box" onclick="plusSlide(1)"><i class="fa-solid fa-angle-right"></i></a>
+                    <!-- <a class="prev-box" onclick="plusSlide(-1)"><i class="fa-solid fa-angle-left"></i></a>
+                    <a class="next-box" onclick="plusSlide(1)"><i class="fa-solid fa-angle-right"></i></a> -->
                     <!-- </div> -->
                 </div>
             </div>
@@ -196,8 +230,8 @@
 
 
     </div>
-        <script src="/JS/slideshow_main.js"></script>
-        
+    <script src="/JS/slideshow_main.js"></script>
+
 
 
 
@@ -264,11 +298,13 @@
                                 available for almost all dosage forms including sterile as well as non sterile products.
                                 Formulations
                                 has three manufacturing facility in the state of Gujarat </p>
+                            <a href="#">Read More</a>
                         </div>
                         <div class="formula-para" style="clear:left ;">
                             <p class="form-slider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, non
                                 accusantium
                                 quo voluptates ex sunt temporibus quia aliquam ad illo repellendus! Voluptas, sint! </p>
+                            <a href="#">Read More</a>
                         </div>
                         <div class="formula-para" style="clear:left ;">
                             <p class="form-slider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at
@@ -279,6 +315,7 @@
                                 pariatur
                                 ex ab
                                 nulla voluptas, veniam, dolorem magni voluptatibus in fugit. </p>
+                            <a href="#">Read More</a>
                         </div>
                         <div class="formula-para" style="clear:left ;">
                             <p class="form-slider">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at
@@ -291,8 +328,9 @@
                                 nulla voluptas, veniam, dolorem magni voluptatibus in fugit. Lorem ipsum dolor sit
                                 amet
                                 consectetur adipisicing elit. Nostrum, nulla. </p>
+                            <a href="#">Read More</a>
                         </div>
-                        <a href="#">Read More</a>
+
                     </div>
                     <div class="dots" style="text-align:center">
                         <span class="dot1" onclick="currentSlid(1)"></span>
@@ -310,7 +348,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-all">
+        <div class="footer-all cf">
             <div class="container1">
                 <div class="blog-products">
                     <div class="blog">
@@ -361,26 +399,35 @@
                     </p>
                     <a href="">View All</a>
                 </div>
-            </div>
-            <div class="last cf">
-                <div class="container1">
-                    <div class="l-line">
-                        <p>© Copyright 2017 Cadila Pharmaceuticals Limited. All rights reserved</p>
-                    </div>
-                    <div class="adv">
-                        <p style="display: inline;"> <a href=""> <i class="fa-brands fa-linkedin-in"
-                                    style="color: white;"></a></i>
-                        </p>
-                        <p style="display: inline;"> <a href=""> <i class="fa-brands fa-youtube"
-                                    style="color: white;"></a></i>
-                        </p>
-                        <p style="display: inline;"> <a href=""> <i class="fa-brands fa-facebook-f"
-                                    style="color: white;"></a></i>
-                        </p>
+                <div class="last">
+                    <div class="container1">
+
+
+                        <div class="l-line">
+                            <p>© Copyright 2017 Cadila Pharmaceuticals Limited. All rights reserved</p>
+                        </div>
+
+
+                        <div class="adv">
+                            <p style="display: inline;"> <a href=""> <i class="fa-brands fa-linkedin-in"
+                                        style="color: white;"></a></i>
+                            </p>
+                            <p style="display: inline;"> <a href=""> <i class="fa-brands fa-youtube"
+                                        style="color: white;"></a></i>
+                            </p>
+                            <p style="display: inline;"> <a href=""> <i class="fa-brands fa-facebook-f"
+                                        style="color: white;"></a></i>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
     </footer>
+    <script src="js/general.js"></script>
+    <script src="js/functions.js"></script>
+
+
 </body>

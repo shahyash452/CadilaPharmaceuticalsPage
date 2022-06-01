@@ -45,7 +45,7 @@
     }
 
     .l-line {
-        margin-left: 45px;
+        /* margin-left: 45px; */
     }
 
     .blog-products {
@@ -56,9 +56,6 @@
         margin-right: 45px;
     }
 
-    .adv {
-        margin-right: 45px;
-    }
 }
 
 @media only screen and (max-width:1200px) {
@@ -141,7 +138,7 @@
     }
 
     .you-tube-video {
-        height: 237px;
+        height: auto;
         right: 0px;
 
     }
@@ -159,6 +156,7 @@
     .dots {
         margin-left: 265px;
     }
+
 
     .blog {
         width: 60%;
@@ -182,13 +180,6 @@
         width: 30%;
     }
 
-    .l-line {
-        margin-top: 70px;
-    }
-
-    .adv {
-        margin-top: 47px;
-    }
 }
 
 @media only screen and (max-width:973px) {
@@ -215,23 +206,24 @@
     }
 
     .box {
-        /* z-index: 10; */
-        position: absolute;
-        bottom: -580px;
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        bottom: -235px;
+        padding-left: 100px;
     }
 
+    .desc:nth-child(3) {
+        display: none;
+    }
+
+
     .vid {
-        margin-top: 600px;
+        margin-top: 220px;
     }
 
     .you-tube-video {
         position: absolute;
-        right: 40px;
-        bottom: -270px;
-        left: 18%;
+        right: 112px;
+        top: 510px;
     }
 
     .you-tube-video iframe {
@@ -258,7 +250,6 @@
     }
 
     .f-text a {
-        bottom: 25px;
         font-size: 14px;
     }
 
@@ -269,10 +260,6 @@
 
     .dots {
         margin-top: 56px;
-    }
-
-    .footer-all {
-        height: 600px;
     }
 
     .products {
@@ -294,9 +281,6 @@
         top: 0px;
     }
 
-    .adv {
-        margin-top: 70px;
-    }
 }
 
 @media only screen and (max-width:767px) {
@@ -311,6 +295,10 @@
 
     .inside-content p {
         font-size: 16px;
+    }
+
+    .box {
+        padding-left: 27px;
     }
 
     .desc {
@@ -332,6 +320,7 @@
 
     .you-tube-video {
         left: 11%;
+        top: 375px;
     }
 
     .formula img {
@@ -347,9 +336,10 @@
         margin-top: 50px;
     }
 
-    .footer-all {
-        height: 575px;
+    footer {
+        margin-top: 73px;
     }
+
 
     .blog-para,
     .products-para,
@@ -364,7 +354,7 @@
 
 @media only screen and (max-width: 639px) {
     .container1 {
-        max-width: 460px;
+        max-width: 600px;
     }
 
     .right-link {
@@ -403,6 +393,7 @@
     .box {
         top: 245px;
         height: 343px;
+        padding: 0px 70px;
     }
 
     .desc:nth-child(2) {
@@ -419,7 +410,7 @@
     }
 
     .vid {
-        margin-top: 360px;
+        margin-top: 300px;
     }
 
     .vid-para {
@@ -445,7 +436,7 @@
     }
 
     .form-slider {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .formula img {
@@ -454,7 +445,6 @@
     }
 
     .f-text a {
-        bottom: 38px;
         font-size: 10px;
     }
 
@@ -482,11 +472,11 @@
     }
 
     .l-line {
-        margin-top: 74px;
+        /* margin-top: 74px; */
     }
 
     .l-line p {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .adv p a i {
@@ -512,51 +502,74 @@
     .adv p {
         padding: 0px 5px;
     }
+
     .l-line {
-        margin-left: 15px;
+        /* margin-left: 15px; */
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .form-slider {
+        font-size: 11px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .container1{
-        max-width: 360px;
+    .container1 {
+        max-width: 400px;
     }
+
     .topHeader ul li {
         padding: 0px;
         font-size: 8px;
     }
+
     .leftNav img {
         height: 68px;
     }
+
     .inside-content {
         height: 57px;
         width: 165px;
     }
+
     .inside-content p {
         font-size: 10px;
     }
+
     .search-icon li {
         padding: 9px;
         font-size: 12px;
     }
+
     .box {
         top: 200px;
         height: 343px;
+        padding: 0 0 0 40px;
     }
+
+    .vid {
+        margin-top: 320px;
+    }
+
     .vid-para {
         width: 287px;
         font-size: 13px;
     }
+
     .you-tube-video {
         left: 5%;
     }
+
     .you-tube-video iframe {
         width: 290px;
         height: 163px;
     }
+
     .formulations {
-        margin-top: 215px;
+        margin-top: 250px;
     }
+
     .f-text hr {
         float: left;
         border-top: 4px solid #ffcc00;
@@ -564,30 +577,158 @@
         margin-top: -10px;
         width: 44%;
     }
+
     .formula img {
         height: 143px;
         width: 188px;
     }
+
     .f-text {
         margin-left: 0px;
     }
+
     .form-slider {
-        font-size: 9px;
+        font-size: 10px;
     }
+
     .dots {
         margin-top: 55px;
         margin-left: 80px;
     }
-    .footer-all {
-        height: 558px;
-    }
-    .products a ,.country a{
+
+
+    .products a,
+    .country a {
         font-size: 12px;
     }
+
     .l-line {
+        /* margin-left: 0px; */
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .container1{
+        max-width: 350px;
+    }
+    .right-link {
+        padding: 10px 3px;
+    }
+
+    .topHeader ul li {
+        padding: 0px;
+        font-size: 10px;
+    }
+    .topHeader ul li:nth-child(6),.topHeader ul li:nth-child(1){
+        display: none;
+    }
+
+    .box {
+        top: 200px;
+        height: 343px;
+        padding: 0 0 0 15px;
+    }
+    .desc{
+        width: 290px;
+    }
+    .you-tube-video {
+        left: 8%;
+    }
+
+    .you-tube-video iframe {
+        width: 234px;
+        height: 133px;
+    }
+    .text{
+        margin: 20px 30px;
+    }
+
+    .vid {
+        margin-top: 350px;
+    }
+
+    .vid-para {
+        width: 94%;
+    }
+
+    .formulations {
+        margin-top: 195px;
+    }
+
+    .formula {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formula img {
+        height: 200px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-slider {
+        text-align: center;
+        margin-top: 23px;
+    }
+
+    .form-slider {
+        font-size: 11px;
+        padding: 0px 18px;
+        margin: 0;
+        width: 100%;
+    }
+    .f-text a {
+        margin:7px;
+    }
+    .f-text hr {
+        display: none;
+    }
+    .f-text h3{
+        text-decoration: underline;
+        text-decoration-color: #ffcc00 ;
+        text-decoration-thickness: 4px;
+    }
+    .dots {
+        display: inline-block;
+        margin: 0px auto;
+    }
+    footer {
+        margin-top: 30px;
+    }
+
+
+    .blog-para, .products-para, .country p {
+        font-size: 15px;
+    }
+    .blog-products {
+        width: 95%;
+        flex-direction: column;
+    }
+    .blog{
+        width: 94%;
+    }
+    .products {
+        width: 94%;
         margin-left: 0px;
     }
-    .adv {
-        margin-right: 0px;
+    .country{
+        margin: 0px;
+        width: 94%;
+        right: 0px;
     }
+    .products a, .country a {
+        font-size: 17px;
+    }
+
+    .l-line {
+        /* margin-top: 40px; */
+        /* width: 65%; */
+        /* height: 21px; */
+    }
+
+    .last {
+        margin: 0px 10px;
+    }
+
 }

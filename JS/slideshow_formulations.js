@@ -7,7 +7,7 @@ function currentSlid(n) {
 
 function showSlide(n) {
     let i;
-    let slides = document.getElementsByClassName("form-slider");
+    let slides = document.getElementsByClassName("formula-para");
     let dots = document.getElementsByClassName("dot1");
     if (n > slides.length) { sIndex = 1 }
     if (n < 1) { sIndex = slides.length }
