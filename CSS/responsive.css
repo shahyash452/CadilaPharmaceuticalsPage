@@ -63,8 +63,18 @@
         max-width: 970px;
     }
 
+
     .toggleMenu {
         display: block;
+    }
+
+    #nav {
+        top: 100%;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #ffcb05;
     }
 
     /* #nav{
@@ -75,16 +85,170 @@
     #nav li:nth-child(9)::after {
         content: '';
     }
-    #nav li{
+
+    /*Navigation*/
+    #nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    #nav ul {
+        background: #305d93;
+    }
+
+    .toggleMenu,
+    #nav .menuIcon {
+        display: block;
+    }
+
+    #nav li {
+        float: none;
+        display: block;
+        border: none;
+    }
+
+    #nav li a {
+        border-top: 1px solid #002d63
+    }
+
+    #nav li.parent {
+        position: relative;
+    }
+
+    #nav li .menuIcon,
+    #nav li li .menuIcon {
+        width: 46px;
+        height: auto;
+        background-color: #002d63;
+        background-color: rgba(0, 45, 99, 0.5);
+        background-image: url(../images/down-arrow.gif);
+        background-repeat: no-repeat;
+        background-position: center 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+    #nav li .menuIcon.active,
+    #nav li li .menuIcon.active {
+        background-color: #002d63;
+        background-color: rgba(1, 36, 78, 0.5);
+    }
+
+    #nav li>a:hover,
+    #nav li.hover>a,
+    #nav li.active>a,
+    #nav li ul li a:hover,
+    #nav li ul li>a.selected,
+    #nav ul a:hover,
+    .noJS #nav ul a:focus,
+    #nav ul a.selected,
+    #nav>li>a:hover,
+    #nav>li.hover>a,
+    #nav>li.focus>a {
+        background-color: #002d63;
+        color: #fff;
+    }
+
+    #nav ul {
+        width: 100%;
+        display: none;
+        position: static;
+        transition: none;
+        -webkit-transition: none;
+    }
+
+    .hasJS #nav ul {
+        opacity: 1;
+    }
+
+    #nav li ul li,
+    #nav ul a {
+        width: 100%
+    }
+
+    #nav>li:hover>ul,
+    #nav li li:hover>ul,
+    #nav li li li:hover>ul {
+        display: none;
+    }
+
+    #nav ul,
+    #nav *:hover ul ul,
+    #nav .hover ul ul,
+    #nav .focus ul ul {
+        margin-left: 0;
+    }
+
+    #nav li a {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: block;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    #nav li ul li a {
+        padding: 7px 55px 7px 25px;
+        display: block;
+        line-height: 21px;
+        background: url(../images/right-arrow.gif) no-repeat 15px 15px;
+        color: #fff;
+        border: none
+    }
+
+    #nav li ul li ul li a {
+        padding-left: 45px;
+        background-position: 33px center
+    }
+
+    #nav li ul li ul li ul li a {
+        padding-left: 60px;
+        background-position: 45px center
+    }
+
+    #nav>li>a:hover,
+    #nav>li.hover>a,
+    #nav>li.focus>a,
+    #nav>.highlight>a {
+        background-color: #305d93;
+        color: #fff;
+    }
+
+    #nav li ul li a:hover,
+    #nav li ul li>a.selected,
+    #nav ul a:hover,
+    .noJS #nav ul a:focus,
+    #nav ul a.selected,
+    #nav ul>.highlight>a {
+        background-color: #305d93;
+        color: #fff;
+    }
+
+    #nav li {
         float: none;
         display: block;
     }
-    #nav li:nth-child(8){
+
+    /* .search i{
         display: none;
-    }
-    #nav li:nth-child(9){
+    } */
+
+    /* #nav li:nth-child(9) {
         padding: 0px 20px;
+    } */
+    .three-items{
+        float: none;
     }
+
+    .mainNavigation {
+        float: none;
+    }
+
     .search-icon {
         clear: right;
         float: right;
@@ -200,6 +364,15 @@
 
     .next {
         right: 0px;
+    }
+
+    #nav {
+        top: 118px;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #f7f7f7;
     }
 
     .inside-content {
@@ -368,6 +541,9 @@
     .container1 {
         max-width: 600px;
     }
+    #nav{
+        top: 85%;
+    }
 
     .right-link {
         float: none;
@@ -419,6 +595,11 @@
     .desc {
         float: right;
         max-height: 325px;
+        width: 360px;
+    }
+
+    .para {
+        font-size: 18px;
     }
 
     .vid {
@@ -516,6 +697,18 @@
 @media only screen and (max-width: 580px) {
     .form-slider {
         font-size: 11px;
+    }
+
+    .desc {
+        width: 300px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .adv {
+        margin: 0px 40%;
     }
 }
 
@@ -742,6 +935,14 @@
 
     .last {
         margin: 0px 10px;
+    }
+
+    .l-line {
+        margin-top: 22px;
+    }
+
+    .adv {
+        margin: 0px 35%;
     }
 
 }

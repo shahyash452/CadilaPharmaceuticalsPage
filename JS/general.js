@@ -15,7 +15,7 @@ function isIEver () {
 var jsFolder = "js/";
 var cssFolder = "css/";	
 var ww = document.body.clientWidth, wh = document.body.clientHeight;
-var mobilePort = 800, ipadView = 1024, wideScreen = 1600;
+var mobilePort = 1200, ipadView = 1200, wideScreen = 1600;
 
 /*================= Global Variable End =================*/	
 
