@@ -94,7 +94,7 @@ $(document).ready( function(){
 	if( $(".carouselBlock").length) {
 		$('.carouselBlock').owlCarousel({
 			 loop:true
-			,autoplay:true
+			// ,autoplay:true
 			,autoplayTimeout:3000
 			,smartSpeed:1200
 			,margin:10
@@ -103,11 +103,11 @@ $(document).ready( function(){
 				0:{
 					items:1
 				},
-				600:{
-					items:3
+				580:{
+					items:2
 				},
 				1000:{
-					items:5
+					items:3
 				}
 			}
 		})

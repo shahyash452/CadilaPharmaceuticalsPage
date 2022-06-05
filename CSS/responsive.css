@@ -23,14 +23,14 @@
         top: 100px;
     }
 
-    .desc {
-        width: 355px;
+    .owl-carousel .owl-stage-outer {
+        padding: 0 25px;
     }
 
-    .heading img {
-        position: relative;
-        left: 70px;
+    .desc {
+        width: 300px;
     }
+
 
     .text {
         margin-left: 45px;
@@ -215,7 +215,7 @@
     #nav>li.hover>a,
     #nav>li.focus>a,
     #nav>.highlight>a {
-        background-color: #305d93;
+        background-color: #34258e;
         color: #fff;
     }
 
@@ -225,7 +225,7 @@
     .noJS #nav ul a:focus,
     #nav ul a.selected,
     #nav ul>.highlight>a {
-        background-color: #305d93;
+        background-color: #34258e;
         color: #fff;
     }
 
@@ -234,15 +234,16 @@
         display: block;
     }
 
-    /* .search i{
-        display: none;
-    } */
-
-    /* #nav li:nth-child(9) {
-        padding: 0px 20px;
-    } */
-    .three-items{
+    .three-items {
         float: none;
+    }
+
+    .three-items li:nth-child(1)::after {
+        content: "";
+    }
+
+    .three-items li:nth-child(2)::after {
+        content: "";
     }
 
     .mainNavigation {
@@ -272,36 +273,12 @@
         font-size: 25px;
     }
 
-    .box {
-        bottom: -230px;
-    }
-
     .desc {
-        width: 280px;
+        width: 345px;
     }
 
     .heading h4 {
         font-size: 20px;
-    }
-
-    .heading img {
-        position: relative;
-        left: 40px;
-        height: 56px;
-    }
-
-    .para {
-        min-height: 177px;
-    }
-
-    .desc a {
-        position: relative;
-        left: 10px;
-        bottom: 5px;
-    }
-
-    .vid {
-        margin-top: 240px;
     }
 
     .vid-para {
@@ -372,7 +349,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        background-color: #f7f7f7;
+        background-color: #ffcb05;
     }
 
     .inside-content {
@@ -385,19 +362,8 @@
         font-size: 20px;
     }
 
-    .box {
-        display: flex;
-        bottom: -235px;
-        padding-left: 100px;
-    }
-
-    .desc:nth-child(3) {
-        display: none;
-    }
-
-
-    .vid {
-        margin-top: 220px;
+    .desc {
+        width: 300px;
     }
 
     .you-tube-video {
@@ -477,13 +443,13 @@
         font-size: 16px;
     }
 
-    .blue_line hr {
-        bottom: -5px;
-        height: 30px;
+    .prev,
+    .next {
+        top: 43%;
     }
 
-    .box {
-        padding-left: 27px;
+    .owl-carousel .owl-stage-outer {
+        padding: 0px 8px;
     }
 
     .desc {
@@ -491,8 +457,8 @@
     }
 
     .heading img {
-        left: 27px;
-        height: 50px;
+        height: 60px;
+        padding: 10px 0;
     }
 
     .vid {
@@ -541,7 +507,8 @@
     .container1 {
         max-width: 600px;
     }
-    #nav{
+
+    #nav {
         top: 85%;
     }
 
@@ -578,32 +545,17 @@
         padding: 7px;
     }
 
-    .box {
-        top: 245px;
-        height: 343px;
-        padding: 0px 70px;
-    }
-
-    .desc:nth-child(2) {
-        display: none;
-    }
-
-    .desc:nth-child(3) {
-        display: none;
-    }
-
     .desc {
-        float: right;
-        max-height: 325px;
-        width: 360px;
+        width: 250px;
     }
 
     .para {
-        font-size: 18px;
+        font-size: 16px;
     }
 
-    .vid {
-        margin-top: 300px;
+    .para p {
+        min-height: 170px;
+
     }
 
     .vid-para {
@@ -681,7 +633,7 @@
     .blog-para,
     .products-para,
     .country p {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .prev:hover,
@@ -703,8 +655,13 @@
         width: 300px;
     }
 
+    .owl-carousel .owl-stage-outer {
+        padding: 0px 60px;
+    }
+
     .para {
-        font-size: 14px;
+        padding: 0px;
+        font-size: 17px;
     }
 
     .adv {
@@ -739,15 +696,14 @@
         padding: 9px;
         font-size: 12px;
     }
-
-    .box {
-        top: 200px;
-        height: 343px;
-        padding: 0 0 0 40px;
+    .owl-carousel .owl-stage-outer {
+        padding: 0px 48px;
     }
-
-    .vid {
-        margin-top: 320px;
+    .slider-box {
+        margin-top: -60px;
+    }
+    .desc{
+        width: 250px;
     }
 
     .vid-para {
@@ -778,7 +734,7 @@
 
     .formula img {
         height: 143px;
-        width: 188px;
+        width: 165px;
     }
 
     .f-text {
@@ -794,10 +750,19 @@
         margin-left: 80px;
     }
 
+    .blog-para,
+    .products-para,
+    .country p {
+        font-size: 12px;
+    }
+
 
     .products a,
     .country a {
         font-size: 12px;
+    }
+    .l-line {
+        padding: 0px 10px;
     }
 }
 
@@ -820,16 +785,6 @@
         display: none;
     }
 
-    .box {
-        top: 200px;
-        height: 343px;
-        padding: 0 0 0 15px;
-    }
-
-    .desc {
-        width: 290px;
-    }
-
     .you-tube-video {
         left: 8%;
     }
@@ -841,10 +796,6 @@
 
     .text {
         margin: 20px 30px;
-    }
-
-    .vid {
-        margin-top: 350px;
     }
 
     .vid-para {
