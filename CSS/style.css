@@ -369,7 +369,7 @@ ul li {
 #nav li a {
     padding: 5px 16px;
     line-height: 36px;
-    color: #868686;
+    color: #5a5a5a;
     font-weight: 200;
     font-size:
         /*1.067em*/
@@ -559,15 +559,11 @@ ul li {
 
 }
 
-/* Hide the images by default */
 .mySlides {
     display: none;
     position: relative;
 }
 
-
-
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -588,13 +584,11 @@ ul li {
     left: 50px;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 50px;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     font-size: 30px;
@@ -873,6 +867,7 @@ ul li {
     transform: rotate(180deg);
     height: 20px;
     width: 20px;
+    position: relative;
 }
 
 .owl-next {
@@ -882,6 +877,14 @@ ul li {
     width: 20px;
     color: rgba(255, 89, 0, 0.8);
 
+}
+
+.owl-prev::before{
+    content: '';
+    width: 50%;
+    height: 1px;
+    color: #000;
+    position: absolute;
 }
 
 /* 
@@ -1028,7 +1031,8 @@ ul li {
 /* Middle Element */
 
 .vid {
-    background-image: url("/Images/Blue.jpg");
+    margin-top: 20px;
+    background-image: url("../Images/Blue.jpg");
     height: 500px;
     background-repeat: no-repeat;
     position: relative;
@@ -1166,7 +1170,7 @@ footer {
 }
 
 .footer-all {
-    background-image: url("/Images/Footer.jpg");
+    background-image: url("../Images/Footer.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -1194,7 +1198,8 @@ footer a:hover {
 }
 
 .footer-all .container1 {
-    padding: 26px 0;
+    padding-top: 36px;
+    position: relative;
 }
 
 .blog h3,
