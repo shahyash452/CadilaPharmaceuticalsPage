@@ -369,7 +369,8 @@ ul li {
 #nav li a {
     padding: 5px 16px;
     line-height: 36px;
-    color: black;
+    color: #868686;
+    font-weight: 200;
     font-size:
         /*1.067em*/
         16px;
@@ -407,7 +408,7 @@ ul li {
 #nav ul li a {
     display: block;
     background-color: #ffcb05;
-    font-size: 1em;
+    font-size: 15px;
     line-height: 24px;
     color: #000;
     border: none;
@@ -532,13 +533,16 @@ ul li {
 
 .three-items li:nth-child(1)::after {
     content: "|";
+
 }
 
 .three-items li:nth-child(2)::after {
     content: "|";
+    height: 5px;
 }
 
-.three-items li a:hover {
+.search a:hover,
+.flag a:hover {
     background-color: #34258e;
 }
 
@@ -597,9 +601,12 @@ ul li {
     color: rgba(255, 89, 0, 0.8);
 }
 
+.dots-main {
+    position: absolute;
+    top: -60px;
+}
+
 .dot {
-    position: relative;
-    bottom: 200px;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -620,11 +627,11 @@ ul li {
     position: relative;
 }
 
-.blue_line hr {
+.blue_line {
     border: 2px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    bottom: -5px;
+    bottom: 237px;
     height: 50px;
     opacity: 0.6;
     width: 99.7%;
@@ -648,7 +655,8 @@ ul li {
     color: #ffffff;
 }
 
-.slider-box{
+.slider-box {
+    position: relative;
     margin-top: -90px;
 }
 
@@ -829,6 +837,7 @@ ul li {
     -webkit-tap-highlight-color: transparent;
     margin: 0 auto;
 }
+
 /* 
 .owl-theme .owl-controls .owl-nav [class*=owl-] {
     color: #fff;
@@ -853,10 +862,11 @@ ul li {
     opacity: .5;
     cursor: default
 } */
-.owl-nav{
+.owl-nav {
     display: flex;
 }
-.owl-prev{
+
+.owl-prev {
     background: url(../Images/next.png) no-repeat;
     font-size: 0;
     padding-top: 5px;
@@ -864,7 +874,8 @@ ul li {
     height: 20px;
     width: 20px;
 }
-.owl-next{
+
+.owl-next {
     background: url(../Images/next.png) no-repeat;
     font-size: 0;
     height: 20px;
@@ -872,6 +883,7 @@ ul li {
     color: rgba(255, 89, 0, 0.8);
 
 }
+
 /* 
 .owl-theme .owl-dots .owl-dot,
 .noJS .owl-dots .owl-dot {
@@ -971,34 +983,36 @@ ul li {
 
 
 .heading h4 {
+    position: relative;
     float: left;
     padding: 12px 0;
     font-size: 25px;
     color: #34258e;
-    border-bottom: 6px solid yellow;
 }
 
-.desc hr {
-    float: left;
-    position: relative;
-    left: 20px;
-    border-top: 6px solid #ffca00;
-    opacity: 2.25;
+.heading h4:after {
+    content: "";
+    background: #ffcb05;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 50%;
 }
 
 .para {
     clear: left;
-    padding: 40px 0px;
     font-size: 15px;
     color: #5a5a5a;
     text-align: justify;
 }
-.para p{
-    min-height:100px
+
+.para p {
+    min-height: 100px
 }
 
 .desc a {
-    padding:10px 3px;
+    padding: 10px 3px;
     color: #5d1bc8;
 }
 
@@ -1032,6 +1046,20 @@ ul li {
     text-align: justify;
 }
 
+.text h3 {
+    position: relative;
+}
+
+.text h3:after {
+    content: "";
+    background: #ffcb05;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 10%;
+}
+
 .text a {
     color: #ffca00;
     padding: 10px 0;
@@ -1044,12 +1072,6 @@ ul li {
     background-color: #ff6f00;
 }
 
-.text hr {
-    float: left;
-    border-top: 6px solid #ffcc00;
-    opacity: 2.25;
-    margin-top: -9px
-}
 
 
 .vid .container1 {
@@ -1083,6 +1105,17 @@ ul li {
 .f-text h3 {
     font-size: 25px;
     color: #34258e;
+    position: relative;
+}
+
+.f-text h3:after {
+    content: "";
+    background: #ffcb05;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 10%;
 }
 
 .f-text a {
@@ -1098,12 +1131,6 @@ ul li {
     background-color: #ff6f00;
 }
 
-.f-text hr {
-    float: left;
-    border-top: 6px solid #ffcc00;
-    opacity: 2.25;
-    margin-top: -10px;
-}
 
 .formula-para {
     padding-top: 10px;
@@ -1166,9 +1193,6 @@ footer a:hover {
     min-height: 240px;
 }
 
-/* .blog{
-    display: flex;
-} */
 .footer-all .container1 {
     padding: 26px 0;
 }
@@ -1176,19 +1200,31 @@ footer a:hover {
 .blog h3,
 .products h3 {
     color: white;
+    position: relative;
+}
+
+.blog h3:after {
+    content: "";
+    background: #ffcb05;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 7%;
+}
+
+.products h3:after {
+    content: "";
+    background: #ffcb05;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 5px;
+    width: 28%;
 }
 
 .blog ul li {
     color: white;
-}
-
-.blog hr,
-.products hr {
-    float: left;
-    border-top: 6px solid #ffcc00;
-    opacity: 2.25;
-    position: relative;
-    bottom: 20px;
 }
 
 .blog ul li span {
@@ -1224,6 +1260,17 @@ footer a:hover {
 
 .country h6 {
     color: #ffffff;
+    position: relative;
+}
+
+.country h6:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 1px;
+    width: 50%;
 }
 
 .country h5 {

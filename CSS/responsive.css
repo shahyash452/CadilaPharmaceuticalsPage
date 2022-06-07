@@ -274,7 +274,7 @@
     }
 
     .desc {
-        width: 345px;
+        width: 250px;
     }
 
     .heading h4 {
@@ -691,7 +691,17 @@
     .inside-content p {
         font-size: 10px;
     }
-
+    .blue_line {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        bottom: 290px;
+        height: 24px;
+        opacity: 1.6;
+        width: 99.7%;
+    }
+    
+    
     .search-icon li {
         padding: 9px;
         font-size: 12px;
@@ -784,6 +794,18 @@
     .topHeader ul li:nth-child(1) {
         display: none;
     }
+    .owl-carousel .owl-stage-outer {
+        padding: 0px 30px;
+    }
+    .blue_line {
+        bottom: 290px;
+        height: 24px;
+        opacity: 1.6;
+        width: 99%;
+    }
+    .desc{
+        width:250px;
+    }
 
     .you-tube-video {
         left: 8%;
@@ -804,6 +826,15 @@
 
     .formulations {
         margin-top: 195px;
+    }
+    .f-text h3:after {
+        content: "";
+        background: #ffcb05;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0px;
+        width: 0;
     }
 
     .formula {
@@ -830,7 +861,7 @@
     }
 
     .f-text a {
-        margin: 7px;
+        margin: 14px;
     }
 
     .f-text hr {
@@ -896,4 +927,9 @@
         margin: 0px 35%;
     }
 
+}
+@media only screen and (max-width: 325px) {
+    .desc {
+        width: 234px;
+    }
 }
